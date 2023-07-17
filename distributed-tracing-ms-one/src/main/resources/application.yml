@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: dt-ms-one-clients
+
+  datasource:
+    url: jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6633051
+    username: sql6633051
+    password: mRyDxYeTGc
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+server:
+  port: 2023
+
+logging:
+  pattern:
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
