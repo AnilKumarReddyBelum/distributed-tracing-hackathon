@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: dt-ms-four-ui
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+server:
+  port: 2026
+
+externalService:
+  dt-ms-three-clientsAndPayers:
+    api: http://localhost:2025/clientsAndPayers
+
+logging:
+  pattern:
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+
+
