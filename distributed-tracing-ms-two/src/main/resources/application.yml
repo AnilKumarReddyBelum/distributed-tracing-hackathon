@@ -34,7 +34,7 @@ server:
 
 externalService:
   dt-ms-one-clients:
-    url: https://distributed-tracing-ms-one-beanilku-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/clients
+    url: https://distributed-tracing-ms-one-beanilku-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/clients/
 
 logging:
   pattern:
