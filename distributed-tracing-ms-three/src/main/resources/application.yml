@@ -22,9 +22,9 @@ server:
 
 externalService:
   dt-ms-one-clients:
-    api: http://localhost:2023/clients
+    api: https://distributed-tracing-ms-one-beanilku-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/clients
   dt-ms-two-payers:
-    api: http://localhost:2024/payers
+    api: https://distributed-tracing-ms-two-beanilku-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/payers
 
 logging:
   pattern:
