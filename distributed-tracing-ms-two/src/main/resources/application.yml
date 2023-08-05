@@ -14,6 +14,9 @@ spring:
 
 
 management:
+  zipkin:
+    tracing:
+      endpoint: https://zipkin-beanilku-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/api/v2/spans
   tracing:
     sampling:
       probability: 1.0
