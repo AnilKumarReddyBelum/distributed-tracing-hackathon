@@ -22,7 +22,7 @@ server:
 
 externalService:
   dt-ms-three-clientsAndPayers:
-    api: http://localhost:2025/clientsAndPayers
+    api: https://distributed-tracing-ms-three-beanilku-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/clientsAndPayers
 
 logging:
   pattern:
